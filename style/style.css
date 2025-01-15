@@ -1,50 +1,146 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
 }
-body{
+
+body {
     font-family: "Bebas Neue", serif;
+    letter-spacing: 1px;
+    max-width: 1280px;
+    margin: 0 auto;
 }
-header{
+
+header {
     background-color: rgb(255, 255, 255);
 
 }
+
 /* Navbar section Style  */
-.navbar{
+.navbar {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     margin-top: 20px;
 }
-.navbar-left{
+
+.navbar-left {
     color: rgb(54, 57, 88);
-font-size: 28px;
-font-weight: 500;
+    font-size: 28px;
+    font-weight: 500;
 }
-nav>p>span{
+
+nav>p>span {
     color: rgb(244, 96, 96);
 }
-.navbar-right{
+
+.navbar-right {
     color: black;
     display: flex;
     gap: 50px;
 }
-.navbar ul a{
+
+.navbar ul a {
+    font-size: 20px;
     color: black;
     text-decoration: none;
 }
-/* Hero section Style */
 
+/* Hero section Style */
+.hero {
+    padding-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.hero-title span {
+    color: rgb(244, 96, 96);
+}
+
+.hero-text {
+    padding-top: 10%;
+}
+
+.hero-title {
+    font-size: 80px;
+    font-weight: 700;
+    line-height: 80px;
+    letter-spacing: 5px;
+
+}
+
+.hero-caption {
+    color: rgb(62, 62, 62);
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 18px 0;
+}
+
+.hero-btn {
+    color: rgb(255, 255, 255);
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 18px 50px 18px 50px;
+    border: none;
+    border-radius: 6px;
+    background: linear-gradient(0.00deg, rgb(255, 128, 99) -28.333%, rgb(244, 96, 96) 95.833%);
+    margin-top: 10px;
+}
+
+.hero-img {
+    width: 532.07px;
+    height: 541.17px;
+    display: flex;
+    align-items: center;
+
+}
+
+.hero-img1 {
+    width: 100%;
+    height: auto;
+}
+
+.hero2 {
+    flex-direction: row-reverse;
+}
+
+.hero2-title {
+    color: rgb(54, 57, 88);
+    font-size: 48px;
+    font-weight: 700;
+}
 
 /* Mobile device */
 @media screen and (max-width:576px) {
-    
-    
+    .hero {
+        flex-direction: column;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .hero-img {
+        width: 326.07px;
+        height: 508.17px;
+    }
+
+    .hero-title {
+        letter-spacing: 0px;
+    }
+
 }
+
 /* Tablet device  */
 @media screen and (min-width:577px) and (max-width:992px) {
+    .hero {
+        flex-direction: column;
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 30px;
+    }
 
-    
 }
