@@ -133,7 +133,8 @@ nav>p>span {
 .project-title span {
     color: rgb(244, 96, 96);
 }
-.project-all-card{
+
+.project-all-card {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -141,26 +142,30 @@ nav>p>span {
     margin: 0 auto;
     gap: 30px;
     padding-top: 40px;
-    padding-bottom: 40px;
+    padding-bottom: 100px;
 
 }
-.project-card{
+
+.project-card {
     width: 350px;
-height: 374px;
+    height: 374px;
     border-radius: 20px;
-box-shadow: 0px 6.58px 19.74px 0px rgba(0, 0, 0, 0.07);
-background: rgb(255, 255, 255);
-padding: 20px;
+    box-shadow: 0px 6.58px 19.74px 0px rgba(0, 0, 0, 0.07);
+    background: rgb(255, 255, 255);
+    padding: 20px;
 }
-.project-card h3{
+
+.project-card h3 {
     color: rgb(54, 57, 80);
     letter-spacing: 2px;
 }
-.project-card img{
+
+.project-card img {
     width: 100%;
     height: auto;
     padding-bottom: 30px;
 }
+
 .card-caption {
     color: rgb(108, 108, 108);
     font-family: "roboto";
@@ -170,6 +175,56 @@ padding: 20px;
     padding-top: 8px;
 }
 
+/* Footer Section Style  */
+footer {
+    background: rgb(255, 255, 255);
+    text-align: center;
+    padding-bottom: 20px;
+
+}
+
+.footer-top img {
+
+    width: 80%;
+    height: auto;
+}
+
+.footer-top {
+    background: linear-gradient(133.39deg, rgb(93, 105, 233) -9.623%, rgb(66, 37, 182) 99.867%);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 60px;
+    max-width: 1080px;
+    height: 150px;
+    border-radius: 20px;
+   
+}
+
+.footer-title {
+    color: rgb(255, 255, 255);
+    font-size: 64px;
+    font-weight: 700;
+}
+.footer-bottom{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.footer-bottom h2{
+    font-size: 30px;
+}
+.social-icon{
+    padding-top: 10px;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    
+}
+.social-icon img{
+    width: 40px;
+height: 40px;
+}
 /* Mobile device */
 @media screen and (max-width:576px) {
     .hero {
@@ -186,8 +241,12 @@ padding: 20px;
     .hero-title {
         letter-spacing: 0px;
     }
+
     .project-all-card {
         display: grid;
+    }
+    footer{
+        margin: 0 30px;
     }
 }
 
@@ -199,10 +258,17 @@ padding: 20px;
         align-items: center;
         gap: 30px;
     }
+
     .project-all-card {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         margin: 0 30px 0 30px;
     }
+
+    .project {
+        padding: 30px 30px 30ppx 30px;
+    }
+    footer{
+        margin: 0 30px;
+    }
 }
-    
